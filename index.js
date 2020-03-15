@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const scroll = document.querySelector(".js-scroll");
-  const printButton = document.querySelector(".js-print");
   const output = document.querySelector(".js-output");
 
-  printButton.addEventListener("click", () => {
+  const print = () => {
     domtoimage.toPng(scroll).then(img => {
       output.src = img;
     });
-  });
+  };
+
+  print();
+  scroll.addEventListener("keyup", print);
 });
