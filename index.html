@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rsquest</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="scroll js-scroll">
+        <img src="./scroll.png" alt="">
+        <div class="scroll__text-wrapper">
+            <div>
+                <div class="scroll__header" contenteditable="true">
+                    Congratulations!
+                </div>
+                <div class="scroll__body" contenteditable="true">You have completed the Cook's Assistant Quest!
+
+                    You are awarded:
+                    1 Quest Point
+                    300 Cooking XP
+                </div>
+            </div>
+            <div>
+                <span class="scroll__points-label" contenteditable="true">
+                    Quest points:
+                </span>
+                <span class="scroll__points-count" contenteditable="true">
+                    10
+                </span>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="print-button js-print">
+        Print
+    </button>
+    <img src="" alt="" class="js-output">
+    <script src="./dom-to-image.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
