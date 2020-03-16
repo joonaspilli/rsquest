@@ -72,6 +72,20 @@ html, html * {
     outline: 0;
 }
 
+.scroll__quest-icon {
+    display: none;
+}
+
+.scroll__quest-icon--visible {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 120px;
+    max-width: 96px;
+    height: auto;
+}
+
 .scroll__text-wrapper {
     position: absolute;
     top: 0;
@@ -128,11 +142,19 @@ html, html * {
     text-align: right;
 }
 
+.upload-icon-controls {
+    margin: 2rem 0;
+}
+
 .output-img {
+    margin: 2rem 0;
     display: block;
 }
 
 @media print {
+    .upload-icon-controls {
+        display: none;
+    }
     .output-img {
         display: none;
     }

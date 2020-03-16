@@ -8,6 +8,7 @@
 <body>
     <div class="scroll js-scroll">
         <img src="./scroll.png" alt="">
+        <img src="./scroll.png" alt="" class="scroll__quest-icon js-quest-icon">
         <div class="scroll__text-wrapper">
             <div class="scroll__main-content">
                 <div class="scroll__header" contenteditable="true">
@@ -28,6 +29,10 @@
                 </span>
             </div>
         </div>
+    </div>
+    <div class="upload-icon-controls">
+        <input type="file" type="image/*" class="upload-icon-input js-add-img">
+        <input type="button" value="Poista" class="js-remove-img">
     </div>
     <img src="" alt="" class="output-img js-output">
     <script src="./dom-to-image.min.js"></script>
