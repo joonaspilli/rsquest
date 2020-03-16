@@ -131,3 +131,9 @@ html, html * {
 .output-img {
     display: block;
 }
+
+@media print {
+    .output-img {
+        display: none;
+    }
+}

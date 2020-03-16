@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const scroll = document.querySelector(".js-scroll");
   const output = document.querySelector(".js-output");
 
